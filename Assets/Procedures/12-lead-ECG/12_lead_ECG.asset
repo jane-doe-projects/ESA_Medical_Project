@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb3daac2c97e994791fbf6d29944fe0, type: 3}
+  m_Name: 12_lead_ECG
+  m_EditorClassIdentifier: 
+  title: 12 lead ECG
+  description: 12 lead ECG using the TEMPUS Pro vital signs monitor
+  additionsPrefab: {fileID: 2657772167413381871, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+  isActive: 1
+  steps:
+  - stepTitle: Introduction - ECG
+    description: This is a placehodler text which will eventually be describing the
+      overall procedure.
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S00Spawn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: Place Torso Model
+    description: Scale and place the toroso model over the patient. Confirm the placement
+      to lock the model in place.
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S01PlaceModel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: R and L
+    description: Place R and L as shown.
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S02PlaceLeadRL
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: N and F
+    description: Place N and F as shown.
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S03PlaceLeadNF
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: C1
+    description: Place C1
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S04PlaceLeadC1
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: C2
+    description: Place C2
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S05PlaceLeadC2
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: C3
+    description: Place C3
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S06PlaceLeadC3
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: C4
+    description: Place C4
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S07PlaceLeadC4
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: C5
+    description: Place C5
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S08PlaceLeadC5
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: C6
+    description: Place C6
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S09PlaceLeadC6
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: Connect cables
+    description: Connect cables accordingly from tempus pro to placed leads.
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S10ConnectCables
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - stepTitle: TEMPUS Pro
+    description: Press XYZ on your TEMPUS Pro device to run the 12-lead ECG.
+    functionCall:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2657772167413381870, guid: 673e39806ea787a4c83ebbab8ac88f0c, type: 3}
+          m_TargetAssemblyTypeName: ECGBehavior, Assembly-CSharp
+          m_MethodName: S11TempusProGuidance
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
